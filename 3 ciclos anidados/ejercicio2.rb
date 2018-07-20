@@ -24,3 +24,39 @@ Generar el código para imprimir la siguiente tabla:
   <tbody>
  </table>
 =end
+
+
+
+ 
+def menu_web (largo, nro_inicio)
+#largo=4
+#nro_inicio=1
+
+  puts '<tr>'
+    largo.times do |i|
+      puts '<td> ' + nro_inicio.to_s + ' </td>'
+      i += 1
+      nro_inicio +=1
+    end
+  puts '</tr>'
+
+end
+
+puts '<table>'
+puts '<tbody>'
+menu_web(4,1)
+menu_web(4,5)
+menu_web(4,9)
+puts '</table>'
+puts '</tbody>'
+
+
+
+
+=begin
+def sumar(a, b)
+  puts a + b
+end 
+
+puts sumar(4,5)
+=end
